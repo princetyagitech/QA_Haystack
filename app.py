@@ -7,7 +7,6 @@ from haystack.pipelines.standard_pipelines import TextIndexingPipeline
 from haystack.nodes import BM25Retriever
 from haystack.nodes import FARMReader
 from haystack.pipelines import ExtractiveQAPipeline
-from pprint import pprint
 
 
 document_store = InMemoryDocumentStore(use_bm25=True)
@@ -41,7 +40,7 @@ if st.button("Answer"):
     # show results
     if answers:
         
-        st.write(pprint(answers))
+        st.write((answers))
         
         st.write('---')
    
